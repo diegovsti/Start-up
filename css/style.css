@@ -1,0 +1,574 @@
+/* inclusão de fontes de texto no projeto */
+	@font-face{
+		font-family: 'bilbo';
+		src: url('../fonts/Bilbo-Regular.otf');
+	}
+	@font-face{
+		font-family: 'lato';
+		src: url('../fonts/Lato-LightItalic.ttf');
+	}
+/* inclusão de fontes de texto do projeto */
+
+/* Style geral */
+	body{
+		width: 100%;
+		padding: 0;
+		margin:  0;
+		font: 13px/25px Arial;
+		color: #484848;
+		font-style: italic;
+		background: #fff;
+	}
+	p, h2{
+		margin:  0;
+		padding: 0;
+	}
+
+	h2{
+		font-size:31px;
+		line-height: 40px;
+		color: #000;
+		font-weight:normal;
+		font-family: 'bilbo';
+	}
+	.h2-titulo{
+		font-family: 'lato';
+	}
+
+	.link{
+		color: #ff9000;
+		text-decoration: none;
+	}
+	.link:hover{
+		text-decoration: underline;
+	}
+
+
+/* classes top*/
+	.top-0{
+		margin-top: 40px;
+	}
+
+	.top-1{
+		margin-top: 30px;
+	}
+	.top-2{
+		margin-top: 10px;
+	}
+
+	.top-3{
+		margin-top: 12px;
+	}
+
+	.top-4{
+		margin-top: 20px;
+	}
+
+	.top-5{
+		margin-top: 8px !important;
+	}
+	.top-6{
+		margin-top: 13px;
+	}
+
+	.top-7{
+		padding-top: 50px;
+	}
+
+/* classes .p's*/
+	.p3{
+		padding-bottom: 10px;
+	}
+
+	.p4{
+		padding-bottom: 17px;
+	}
+
+
+/* Header of the site */
+	header{
+		width: 100%;
+		background: url('../img/header-bg.jpg') 0 0 repeat;
+		border-bottom: 1px solid #fff;
+		position: fixed;
+		z-index: 3;
+	}
+	h1{
+		display: inline-block;
+		z-index: 2;
+		margin-top: 16px;
+		margin-bottom: 20px;
+		margin-left: 250px;
+		position: relative;
+		float: left;
+	}
+	nav{
+		display: inline-block;
+		z-index: 2;
+		position: relative;
+		float: right;
+		margin-right: 250px;
+		margin-bottom: 20px;
+	}
+	ul{
+		margin:  0;
+		padding: 0;
+		list-style: none;
+	}
+	ul.menu{
+		display: inline-block;
+		margin: 28px 0 0 0;
+	}
+	ul.menu li{
+		float: left;
+		line-height: 30px;
+		margin: 0 0 0 48px;
+	}
+	ul.menu li a{
+		font-size: 24px;
+		line-height: 30px;
+		color: #f2f2f2;
+		display: inline-block;
+		font-family: 'bilbo';
+	}
+	ul.menu li a:hover, ul.menu li.current a{
+		color: #ff9000;
+	}
+	.clear{
+		clear: both;
+		width: 100%;
+	}
+	a{
+		text-decoration: none;
+		vertical-align: top;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+
+/* Section of the slider */
+
+	.slide{
+		width: 85%;
+		overflow: hidden;
+		z-index: 1;
+		margin: 0px auto;
+		background: #fff;
+		border-bottom: 1px solid #fff;
+		position: relative;
+	}
+	.slider{
+		width: 1080px;
+		overflow: hidden;
+		position: relative;
+		padding-top: 96px;
+	}
+
+	#sliders{
+		list-style: none;
+		position: relative;
+		width: 1080px;
+		height: 496px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	#sliders li{
+		position: absolute;
+		top:  0;
+		left: -20px;
+		opacity: 0;
+		z-index: 0;
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		transition: opacity 1s;
+	} 
+
+	#sliders li.slider-active{
+		opacity: 1;
+		z-index: 1;
+	}
+
+/* Style of the text */
+	.banner{
+		position: absolute;
+		z-index: 1;
+		top: 50px;
+		left: 690px;
+		width: 350px;
+		padding-top: 100px;
+	}
+	.banner .text-1{
+		display: block;
+		margin-left: 100px;
+		margin-bottom: 25px;
+		background: #fff;
+		margin-top: 60px;
+	}
+
+	.text-1{
+		font-weight: normal;
+		color: #000;
+		font-size: 60px;
+		line-height: 68px;
+		font-family: 'bilbo';
+	}
+	.text-1 strong{
+		font-weight: normal;
+		display: block;
+		margin-top: -32px;
+	}
+
+	.text-2{
+		font-family: 'lato';
+		font-style: italic;
+		font-weight: 300;
+		font-size: 21px;
+		line-height: 35px;
+		color: #484848;
+		margin-top: 40px;
+	}
+
+	.text-3{
+		font-family: 'bilbo';
+		font-size: 50px;
+		line-height: 60px;
+		color: #484848;
+	}
+	.text-3 span{
+		color: #ff9000;
+	}
+
+	.text-4{
+		font-family: 'lato';
+		font-weight: 300px;
+		font-style: italic;
+		color: #484848;
+		font-size: 30px;
+		line-height: 36px;
+		letter-spacing: -1px;
+	}
+
+/* Style of the content */
+	.content-bg{
+		width: 100%;
+		height: 980px;
+		padding: 0 0 48px 0;
+		background: #f2f2f2;
+	}
+	.content-bg2{
+		width: 100%;
+		padding: 0 0 48px 0;
+		background: #f2f2f2;
+	}
+	.content-bg3{
+		width: 100%;
+		height: 870px;
+		padding: 0 0 48px 0;
+		background: #f2f2f2;
+	}
+	.content-bg4{
+		width: 100%;
+		height: 640px;
+		padding: 0 0 48px 0;
+		background: #f2f2f2;
+	}
+	.content-bg5{
+		width: 100%;
+		height: 1130px;
+		padding: 0 0 48px 0;
+		background: #f2f2f2;
+	}
+
+	.extra-wrap{
+		overflow: hidden;
+	}
+	
+	/* aprensentação */
+	.box-1{
+		overflow: hidden;
+		padding: 40px 0 34px;
+	}
+
+	.box-1 img{
+		float: left;
+		margin-top: -3px;
+	}
+
+	.box-1 h2{
+		margin-bottom: 8px;
+	}
+	
+	/* convidando a conhecer mais sobre a empresa */
+	.box-2{
+		background: url(../img/line-1.gif) 0 0 repeat-x #f6f6f6;
+	}
+
+	.box-2 .wrap-col{
+		background: url(../img/line-1.gif) 0 bottom repeat-x;
+		padding: 15px 0 36px 0;
+		text-align: center;
+	}
+
+	.box-2 p.text-4{
+		margin-top: -7px;
+	}
+
+	/* nossas ideias or Our Idea */
+	.box-3{
+		overflow: hidden;
+	}
+
+	.box-3 > div{
+		width: 180px;
+		float: left;
+		margin-right: 25px;
+	}
+
+	.box-3 > div a.link-2{
+		display: inline-block;
+		margin: 15px 0 6px 0;
+	}
+
+	.img-border{
+		border: 8px solid #fff;
+	}
+
+	.link-2{
+		font-family: 'lato';
+		font-weight: 300px;
+		font-style: italic;
+		font-size: 20px;
+		line-height: 25px;
+		color: #ff9000;
+	}
+
+	.link-2:hover{
+		text-decoration: underline;
+	}
+
+	
+
+	/* only for retired the margin and paddind of the rigth*/
+	.last{
+		margin-right:   0 !important;
+		padding-right:  0 !important;
+
+	}
+
+	/* Style of button */
+	.button{
+		background: url(../img/button.png) 0 0 no-repeat;
+		display: inline-block;
+		color: #000;
+		font-size: 24px;
+		font-family: bilbo;
+		line-height: 30px;
+		padding: 2px 0 5px 43px;
+	}
+
+	.button:hover{
+		color: #579700;
+	}
+
+	/* Style of Data */
+	.date{
+		overflow: hidden;
+	}
+
+	.date strong{
+		display: inline-block;
+		background: url(../img/date.png) 0 0 no-repeat;
+		width: 51px;
+		height: 53px;
+		float: left;
+		margin-right: 5px;
+		font-weight: normal;
+		font-family: bilbo;
+		font-size: 40px;
+		line-height: 48px;
+		color: #000;
+		text-align:center;
+	}
+
+	.date span{
+		font-family: 'lato';
+		font-style: italic;
+		font-size: 20px;
+		font-weight: 300px;
+		line-height: 24px;
+		color: #000;
+		display: inline-block;
+		margin-top: 21px;
+		overflow: hidden;
+	}
+
+/* Style of the footer*/
+	footer{
+		width: 100%;
+		overflow: hidden;
+		padding: 31px 0 20px 0;
+		margin: 0 auto;
+		text-align: center;	
+	}
+
+	
+	.diretos-autorais{
+		float: left;
+		width: 580px;
+	}
+
+	footer p{
+		
+		font-family: 'lato';
+		font-style: italic;
+		font-weight: 300px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.social-icons{
+		overflow: hidden;
+		float: right;
+		margin: 8px 73px 0 0;
+	}
+
+	.social-icons span{
+		display: inline-block;
+		float: left;
+		color: #000;
+		font-size: 20px;
+		line-height: 27px;
+		margin-right: 17px;
+		font-family: 'bilbo';
+	}
+
+	.social-icons a{
+		display: inline-block;
+		float: left;
+		margin-right: 19px;
+	}
+
+	.social-icons a img:hover{
+		opacity: 0.7;
+	}
+
+/* sobre a nossa start-up */
+	/* first part of page*/
+	.box-5{
+		overflow: hidden;
+		padding-top: 8px;
+	}
+	.box-5 img{
+		margin: 4px 10px 0 0;
+	}
+	.right-1{
+		margin-right: 40px;
+	}
+	.fleft{
+		float: left;
+	}
+	.p2{
+		padding-bottom: 40px;
+	}
+	.ultimo{
+		margin-top: -30px;
+	}
+
+	/*Second part of page*/
+	
+	.img-indent{
+		float: left;
+		margin: 4px 18px 0 0;
+	}
+
+	/* Quebra de página */
+	.img-quebra{
+		margin-top: 44px;
+		margin-bottom: 40px;
+	}
+
+/* segundo conteudo */
+
+	.content-second{
+		padding: 0 0 0 25px;
+		line-height: 25px;
+		background: url(../img/marker.png) 0 0 no-repeat;
+
+	}
+	.content-second  a{
+
+		color: #484848;
+	}
+	.content-second  a:hover{
+
+		color: #457c00;
+	}
+
+/* estilo secundário para botões*/
+	.mleft{
+		margin-left: 20px;
+	}
+	.pbottom{
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}	
+
+/* estilo página de contatos*/
+	.map{
+		width: 572px;
+		height: 235px;
+		margin: 12px 0 15px 0;
+	}
+
+	.clr-1{
+		color: #ff9000;
+		padding-top: 15px;
+	}
+
+/* seção do formulário*/
+	#form{
+		margin: 12px 0 0 0;
+		width: 300px;
+	}
+	#form input,textarea{
+		border: 1px solid #fff;
+		background: #fff;
+		font-size: 13px;
+		font-family: Candara;
+		font-style: italic;
+		color: #b6b6b6;
+		outline: none;
+		float: left;
+	}
+	#form input{
+		padding: 5px 9px 6px 18px;
+		width: 271px;
+		height: 17px;
+	}
+	#form textarea{
+		height: 268px;
+		overflow: auto;
+		padding: 6px 0 0 18px;
+		width: 281px;
+		resize: none;
+		margin: 0;
+	}
+	#form label{
+		position: relative;
+		overflow: hidden;
+		display: block;
+		min-height: 35px;
+	}
+	#form fieldset{
+		border: none;
+	}
+
+	.btns{
+		text-align: left;
+		width: 300px;
+		padding-top: 15px;
+	}
+	.btns a{
+		display: inline-block;
+		margin: 0 4px 0 20px;
+	}
